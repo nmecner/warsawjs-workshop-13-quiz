@@ -1,44 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hello Vue!</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-</head>
-
-<body>
-    <div id="app">
-        <div :class="{invalid: isInvalid}">
-            {{message}}
-        </div>
-        <ol>
-            <li v-for='(item,index) in items'>
-                {{item}} {{index}}
-            </li>
-        </ol>
-        <button v-bind:disabled='isInvalid'> Submit!</button>
-        <input type="text" v-model='message'>
-    </div>
-<script>
-    new Vue({
-        el: '#app',
-        data: {
-            message: 'Hello Vue!',
-            items: ['yellow', 'red' ,'blue']
-        },
-        computed: {
-            isInvalid: function () {
-                return this.message.length <= 3
-            }
-        }
-    })
-</script>
-
-<style>
-    .invalid {
-        color:red;
-    }
-</style>
-
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>warsawjs-workshop-13-quiz</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
 </html>
